@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/formu.css">
+    <script src="Js/Validaciones.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+        <!-- INICIO DEL FORMULARIO PARA INGRESAR A LA CUENTA-->
+        <div class="contenedor_principal">
+            <form action="#" class="formulario_registro">
+                <h2>Registrarse</h2>
+                <input type="text" id="nombre" placeholder="Nombre " autocomplete="off" autofocus>   
+                <input type="text" id="apellido" placeholder="Apellido" autocomplete="off">            
+                <input type="text" id="correo" placeholder="Correo Electronico" autocomplete="off">
+                
+                <select name="ciudad" id="ciudad">
+                    <option value="" selected>Seleccione una Ciudad</option>
+                    <option value="guayaquil">Guayaquil</option>
+                    <option value="Ambato">Ambato</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Machala">Machala</option>
+                    <option value="Manta">Manta</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Oriente">Santo Domingo</option>
+                    <option value="Valle">Valle de los Chillos</option>
+                </select>
+                <input type="number" id="celular" placeholder="Teléfono" autocomplete="off">
+
+                
+                <button type="submit" id="enviar"> Registrarse</button>
+                <button type="submit">Limpiar</button>
+            </form>
+        </div>
+             <!-- FIN DEL FORMULARIO PARA INGRESAR A LA CUENTA-->
+        
+        <!-- Donde al dar clic van a ir al otro formulario-->
+                <div class="caja_registro">
+                    <div>
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesion para ingresar a la cuenta</p>
+                        <a href="Iniciar-Sesion.html">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

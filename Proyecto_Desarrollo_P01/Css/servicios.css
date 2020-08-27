@@ -1,0 +1,500 @@
+
+/* Variables en CSS */
+:root 
+{
+    --primary-color: #FFB400;
+    --primary-color-oscuro: #be8500;
+    --secondary-color: #4FAA50;
+    --secondary-color-oscuro: #1d5f1e;
+    --tertiary-color: #e7dcdc;
+    --gray-color: #7E7D7D;
+    --fondo-color: #E0E0E0;
+    --color-blanco: #ffff;
+    --fondo-blanco: #ffff;
+    --fondo-cards: #222329;
+    --negro-opaco: rgba(0,0,0,.3);
+    --texto-primario:'Racing Sans One', cursive;
+    --texto-secundario:'Noto Sans JP', sans-serif;
+}
+*
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.contenedor
+{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+body
+{
+    font-family: var(--texto-primario);
+    font-size: 16px;
+}
+p
+{
+    font-family: var(--texto-secundario);
+    color: var(--tertiary-color);
+    line-height: 2;
+}
+header{background: var(--primary-color);}
+header .contenedor
+{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header .logo
+{
+    width:10%;
+    padding: 10px;  
+}
+header .logo img
+{
+    vertical-align: top;
+    width: 100%;
+    border-radius: 9px;
+}
+header .barra_buscar
+{
+    width: 20%;
+    padding: 10px;
+}
+header .barra_buscar form .buscador
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+header .barra_buscar form input[type="image"]
+{
+    width: 20%;
+    vertical-align: top;
+}
+header .barra_buscar form input[type="text"]
+{
+    width: 78%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+header .menu
+{
+    width: 50%;
+}
+header .menu ul
+{
+    list-style: none;
+}
+header .menu ul li
+{
+    position: relative;
+    display: inline-block;
+}
+header .menu ul li a
+{
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+header .menu ul li .home
+{
+    border-radius: 10px;
+}
+header .menu ul li a:hover
+{
+    background: var(--primary-color-oscuro);
+}
+.submenu
+{
+    position: absolute;
+    background-color: var(--primary-color-oscuro);
+    width: 180px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease 1,5s;
+    border-radius: 0 10px 10px 10px;
+}
+.submenu li a{
+    display: inline-block;
+    text-decoration: none;
+}
+header .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    background: var(--primary-color-oscuro);;
+}
+header .menu li:hover .submenu li a:hover
+{
+    background: var(--primary-color-oscuro);;
+    text-decoration: underline;
+}
+.textos_principales h2
+{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.textos_principales h2,
+.textos_principales p
+{
+    text-align: center;   
+}
+.textos_principales p
+{
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--negro-opaco);
+}
+/* ---------------Horarios----------- */
+
+.horario_laboral
+{
+    background: var(--fondo-color);
+    padding:40px;
+}
+.horario_laboral .horario
+{
+    padding: 40px;
+    background: var(--primary-color);
+    border-radius: 10px 10px 0 0;
+}
+.horario_laboral .d_laborales
+{
+    background: var(--fondo-cards);
+    padding: 20px;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+.horario_laboral .horario,
+.horario_laboral .d_laborales
+{
+    box-shadow: 10px 4px 4px var(--negro-opaco);
+}
+
+.horario_laboral .d_laborales .dia,
+.horario_laboral .d_laborales .hora
+{
+    font-size: 20px;
+   
+}
+.horario_laboral .d_laborales .hora
+{
+    float: right;
+    position: absolute;
+    right: 50px;
+    margin-top: -60px;
+}
+.hr{color: var(--negro-opaco);}
+
+/* ------Soluciones y logistica-------- */
+
+.soluciones_carga{padding: 40px;}
+.titulos_section
+{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 6px 6px var(--negro-opaco);
+}
+/*------ Estilos de las Cards --------*/
+
+.soluciones_carga .cards .contenedor
+{
+    display: flex;
+    justify-content: space-between;
+}
+.soluciones_carga .cards .articulo
+{
+   width: 30%;
+}
+.soluciones_carga .cards .articulo .thumb
+{
+    width: 100%;
+}
+.soluciones_carga .cards .articulo .thumb img
+{
+    vertical-align: top;
+    width: 100%;
+}
+.soluciones_carga .cards .articulo .textos_descriptivos
+{
+    background: var(--fondo-cards);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.soluciones_carga .cards .articulo .textos_descriptivos .titulo
+{
+    font-size: 25px;
+    color: var(--color-blanco);
+} 
+.soluciones_carga .cards .articulo .textos_descriptivos .titulo,
+.soluciones_carga .cards .articulo .textos_descriptivos .descripcion
+{
+    text-align: center;
+}
+.soluciones_carga .cards .articulo .textos_descriptivos hr
+{
+    width: 15%;
+    border: 5px solid #4054B2;
+}
+.soluciones_carga .cards .articulo .textos_descriptivos .descripcion
+{
+    font-size: 18px;
+    font-weight: 100;
+}
+.servicio
+{
+    font-weight: 400;
+}
+.soluciones_carga .cards .articulo .boton
+{
+    text-align: center;
+}
+.soluciones_carga .cards .articulo .boton .btn_solicitar
+{
+    background: none;
+    border-radius: 10px;
+    background: var(--secondary-color);
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.soluciones_carga .cards .articulo .boton .btn_solicitar a
+{
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.soluciones_carga .cards .articulo .boton .btn_solicitar:hover
+{
+    background: var(--secondary-color-oscuro);
+}
+.soluciones_carga .cards .articulo .boton .btn_solicitar a i
+{
+    margin-left: 10px;
+}
+
+/* -----------Entregas Confiables------------- */
+.titulos_subsection
+{
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--texto-secundario);
+    font-weight: 300;
+    font-style: italic;
+    /* margin: 0; */
+}
+.entregas_confiables .titulos_section
+{
+    padding: 60px;
+    color: var(--color-blanco);
+} 
+.entregas_confiables
+{
+    background: url('../imagenes/vintage-concrete.png');
+    background-repeat: repeat;
+    padding-bottom: 50px;
+}
+.entregas_confiables .contenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entregas_confiables .contenido .texto_contenido .explicacion,
+.entregas_confiables .contenido .texto_contenido h3
+{
+   color: var(--fondo-cards);
+}
+.entregas_confiables .foto_planificacion
+{
+    width: 55%;
+   
+}
+.entregas_confiables .contenido
+{
+    width: 40%;
+    margin-right: 10px;
+}
+.entregas_confiables .contenido .cards_2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.entregas_confiables .foto_planificacion img
+{
+    width: 100%;
+    vertical-align: top;
+    height: 600px;
+}
+.entregas_confiables .contenido .icono_entregas
+{
+    width: 20%;
+    padding: 10px;
+    background: var(--primary-color);
+    text-align: center;
+}
+.icono
+{
+    font-size: 40px;
+    color: var(--color-blanco);
+}
+.entregas_confiables .contenido .texto_contenido
+{
+    width: 78%;
+    background: var(--fondo-blanco);
+    padding:0 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.entregas_confiables .contenido .texto_contenido h3
+{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.entregas_confiables .contenido .texto_contenido .explicacion
+{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* ------------------Seccion Covid----------------------- */
+
+.covid{padding: 20px;}
+.covid .contenedor_covid
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.covid .contenedor_covid .foto_covid,
+.covid .contenedor_covid .texto_covid
+{
+    width: 48%;
+}
+.covid .contenedor_covid .foto_covid img
+{
+    vertical-align: top;
+    width: 100%;
+    height: 350px;
+}
+.covid .contenedor_covid .texto_covid .empresa
+{
+    font-family: var(--texto-secundario);
+    font-weight: 400;
+    font-style: italic;
+}
+.covid .contenedor_covid .texto_covid .titulo_trabajamos
+{
+    margin-top: 3px;
+}
+.covid .contenedor_covid .texto_covid .empresa,
+.covid .contenedor_covid .texto_covid .titulo_trabajamos
+{
+    font-size: 30px;
+    margin-bottom: 0;
+   
+}
+.covid .contenedor_covid .texto_covid .descrip_covid
+{
+    color: var(--fondo-cards);
+}
+
+
+/* --------------FOOTER---------------- */
+footer
+{
+    background: var(--fondo-cards);
+    border-top: 10px solid var(--primary-color);
+    color: var(--color-blanco);
+}
+/* --------------FOOTER_PRIMARY---------------- */
+.footer_primary 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_primary  .foto_robot,
+.footer_primary .descripcion_empresa{width:20%;}
+.footer_primary  .foto_robot img
+{
+    vertical-align: top;
+    width: 100%;
+}
+.footer_primary .nuestros_menus
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 50%;
+    padding: 20px;
+    background: var(--negro-opaco);
+}
+.footer_primary .descripcion_empresa .nuestra_empresa
+{
+    font-size: 14px ;
+    font-weight: 100;
+}
+.footer_primary .nuestros_menus a
+{
+    font-family: var(--texto-secundario);
+    font-style: italic;
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.footer_primary .nuestros_menus a:hover
+{
+    text-decoration: underline;
+}
+/* --------------REDES SOCIALES---------------- */
+
+footer .redes_sociales .contenedor
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+footer .redes_sociales .contenedor a
+{
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+footer .redes_sociales .contenedor .facebook:hover{background: #3b5998;}
+footer .redes_sociales .contenedor .twitter:hover{background: #1da1f2;}
+footer .redes_sociales .contenedor .instagram:hover{background: #5851db;}
+footer .redes_sociales .contenedor .github:hover{background: #c9510c;}
+footer .redes_sociales .contenedor .youtube:hover{background: #ff0000;}
+
+/* --------------Sub-Header---------------- */
+
+.sub_footer
+{
+    background: var(--gray-color);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}

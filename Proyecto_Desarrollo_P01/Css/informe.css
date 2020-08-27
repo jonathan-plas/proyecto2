@@ -1,0 +1,62 @@
+:root 
+{
+    --primary-color: #FFB400;
+    --primary-color-oscuro: #be8500;
+    --secondary-color: #4FAA50;
+    --secondary-color-oscuro: #1d5f1e;
+    --tertiary-color: #e7dcdc;
+    --gray-color: #7E7D7D;
+    --fondo-color: #E0E0E0;
+    --color-blanco: #ffff;
+    --color-blanco-oscuro:#f2f2f2;
+    --fondo-blanco: #ffff;
+    --fondo-cards: #222329;
+    --negro-opaco: rgba(0,0,0,.3);
+    --texto-primario:'Racing Sans One', cursive;
+    --texto-secundario:'Noto Sans JP', sans-serif;
+}
+.contenedor_informe svg,
+.contenedor_informe path
+{
+    position: absolute;
+    top: 130px;z-index: -1;
+}
+.animaciones_informe
+{
+    display: flex;
+    justify-content: space-between;
+}
+.animaciones_informe img
+{
+    vertical-align: top;
+    width: 20%;
+}
+/*---------------Tabla--------------------*/
+.reporte .contenedor
+{
+    display: flex;
+    justify-content: center;
+}
+.tabla_informes
+{
+    border-collapse: collapse;
+    margin-bottom: 100px;
+    box-shadow: 8px 5px 6px var(--fondo-cards);
+}
+.tabla_informes th
+{
+    background: var(--primary-color);
+    font-size: 18px;
+}
+.tabla_informes th,
+.tabla_informes td
+{
+    border: 1px solid var(--negro-opaco);
+    padding: 20px;
+}
+.tabla_informes tr:hover >td
+{
+    background: var(--secondary-color);
+    color: var(--color-blanco);
+    cursor: pointer;
+}

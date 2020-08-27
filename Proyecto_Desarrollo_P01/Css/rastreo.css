@@ -1,0 +1,163 @@
+:root 
+{
+    --primary-color: #FFB400;
+    --primary-color-oscuro: #be8500;
+    --secondary-color: #4FAA50;
+    --secondary-color-oscuro: #1d5f1e;
+    --tertiary-color: #e7dcdc;
+    --gray-color: #7E7D7D;
+    --fondo-color: #E0E0E0;
+    --color-blanco: #ffff;
+    --color-blanco-oscuro:#f2f2f2;
+    --fondo-blanco: #ffff;
+    --fondo-cards: #222329;
+    --negro-opaco: rgba(0,0,0,.3);
+    --texto-primario:'Racing Sans One', cursive;
+    --texto-secundario:'Noto Sans JP', sans-serif;
+}
+/*-------------MAIN-----------------------------*/
+.main p{color: var(--fondo-cards);}
+/*------------Fondo y Texto--------------------*/
+.main .colaboracion
+{
+    background: url('../imagenes/fondo_servicio1.jpg') var(--primary-color);
+    height: 560px;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.main .colaboracion .contenedor{max-width: 1200px;}
+.main .colaboracion h2,
+.main .colaboracion h3
+{
+    width: 60%;
+}
+.n_servicios{font-weight: 700; font-family: var(--texto-primario);}
+/*---------------Envios Nacionales------------------*/
+.main .acercade
+{
+    background: var(--color-blanco-oscuro);
+    padding: 100px;
+    height: 550px;
+    text-align: center;
+}
+.main .acercade p
+{
+    color: var(--fondo-cards);
+}
+.main .acercade p span
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*------------------Servicios Courier------------------------*/
+.main .ofertas{background: var(--primary-color); padding: 40px;}
+.main .ofertas .servicio_courier
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main .ofertas .servicio_courier{padding: 40px;}
+.main .ofertas .servicio_courier .contenido_servicio,
+.main .ofertas .servicio_courier .foto_servicio{ width: 40%;}
+.main .ofertas .servicio_courier .foto_servicio img
+{
+    vertical-align: top;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/*-----------------Rastreo-----------------------------------*/
+.main .seguimiento
+{
+    background: url('../imagenes/fondo_4.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    padding: 20px;
+    height: 600px;
+}
+.main .seguimiento .subecuador h3{margin-right: 30px;}
+.main .frm_rastreo
+{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main .frm_rastreo .frm_rastreo_label{font-size: 20px;}
+.main .frm_rastreo input[type="text"]
+{ 
+    width: 60%;
+    border: none;
+    border: 1px solid var(--negro-opaco);
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    color: var(--negro-opaco);
+}
+.main .frm_rastreo input[type="text"]:focus
+{ 
+    widows: 30%;
+    border:2px solid var(--primary-color);
+}
+.main .frm_rastreo .boton
+{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.main .frm_rastreo input[type="submit"]
+{
+    display: inline-block;
+    padding: 15px;
+    border:none;
+    font-size: 30px;
+    background: var(--secondary-color);
+    color: var(--fondo-color);
+    cursor: pointer;
+    border-radius: 15px;
+}
+.main .frm_rastreo input[type="submit"]:hover{background: var(--secondary-color-oscuro);}
+
+/*------------------Servicio Menaje-------------------------------*/
+.menajes{background: var(--secondary-color);padding: 40px;}
+.menajes .servicio_menaje
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menajes .servicio_menaje .contenido,
+.menajes .servicio_menaje .foto_menaje{ width: 48%;}
+.menajes .servicio_menaje .foto_menaje img{vertical-align: top; width: 100%;border-radius: 10px;}
+.menajes .servicio_menaje .contenido p{font-size: 20px;}
+.menajes .servicio_menaje .contenido .beneficios{list-style:none;}
+.menajes .servicio_menaje .contenido .beneficios li{margin-bottom: 10px;font-size: 20px;}
+.menajes .servicio_menaje .contenido .beneficios li i{color: var(--color-blanco);margin-right: 10px;}
+.menajes .guias .titulos_subsection{font-size: 30px;}
+.menajes .guias .literal .contenedor
+{
+    max-width: 1200px;
+    background: rgba(255,180,0,.5);
+    box-shadow: 7px 5px 5px 8px var(--fondo-cards);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+} 
+.menajes .guias .literal p{width: 45%; text-align: justify;}
+.menajes .guias .literal p i{margin-right: 20px;}

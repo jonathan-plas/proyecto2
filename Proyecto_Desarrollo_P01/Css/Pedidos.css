@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+header{
+    margin-top: -46px;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    background-color: #ffd900;
+}
+header h1{
+    color: white;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+.contenedor{
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+.contenedor .tarjetas{
+    width: 100%;
+    flex-wrap: wrap;
+    
+    margin: 20px;
+    display: flex;
+}
+.contenedor .tarjetas .tarjeta{
+    width: 45%;
+    margin: 20px;
+    border: 5px double #07fd0b;
+    display: flex;
+}
+.contenedor .tarjetas .tarjeta:hover{
+    transition: all 800ms;
+    background-color: #ffd900;
+}
+.tarjeta .imagen{
+    width: 50%;
+    margin: 5px;
+}
+.tarjeta .imagen img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.texto p{
+    margin: 5px;
+    letter-spacing: 1px;
+}
+.datos{
+    font-weight: 600;
+    color: red;
+}
+
+button{
+    opacity: .8;
+    background: #00ff00;
+    border: none;
+    padding: 15px 17px;
+    margin: 0 0 15px 50%;
+    border-radius: 15px;
+    color: rgb(255, 0, 0);
+}
+a:hover{
+    opacity: 1;
+    background: #00ff00;
+    border: none;
+    border-radius: 15px;
+}
+a{
+    opacity: .8;
+    background: #00ff00;
+    border: none;
+    padding: 15px 17px;
+    margin: 0 0 15px 50%;
+    border-radius: 15px;
+     color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+h1{
+    color: #ffd900;
+}

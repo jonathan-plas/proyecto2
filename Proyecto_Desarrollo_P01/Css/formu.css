@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Formulario Iniciar Sesion */
+body{
+    background-image: url(../Imagenes/Prueba2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    padding: 25px;
+    margin: auto;
+    margin-top: 100px ;
+}
+.contenedor{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;   
+    display: flex;
+    position: relative;
+}
+.caja_registro{
+    width: 100%;
+    padding:5px 20px;
+    display: block;
+    justify-content: center;
+    /*
+    backdrop-filter: blur(3px);
+    */
+    background-color: #fdbf2f;
+    opacity: .8;
+}
+.caja_registro:hover{
+    opacity: 1;
+}
+.caja_registro div{
+    margin: 100px;
+    color: rgb(3, 3, 3);
+    transition: all 500ms;
+}
+.caja_registro p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.caja_registro h3{
+    font-weight: 300px;
+    font-size: 30px;
+}
+.caja_registro a{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 500ms;
+    
+}
+.caja_registro a:hover{
+    background: white;
+    font-size: 25px;
+    color: #FFB400;
+}
+.contenedor_principal{
+    display: flex;
+    align-items: right;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    margin: 5px 7px ;
+}
+.contenedor_principal form{
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 20px;
+    opacity: .9;
+}
+.contenedor_principal form:hover{
+    opacity: 1;
+}
+
+.contenedor_principal form h2{
+    font-size: 35px;
+    text-align: center;
+    margin: -40px 0 15px 0;
+    color: #FFB400;
+}
+.contenedor_principal form input,.contenedor_principal form select{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 18px;
+    outline: none;
+}
+.contenedor_principal form select{
+    color: rgb(100, 98, 98);
+}
+.contenedor_principal form button[type="submit"]{
+    padding: 13px 40px;
+    margin-top: 40px;
+    font-weight: 600;
+    background: #ffb300e5;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    color: black;
+    margin-bottom: -300px;
+    border-radius: 6px;
+    /*Elimina la linea negra que se genera al presionar el boton */
+    outline: none;
+}
+.contenedor_principal form button[type="submit"]:hover{
+    background: #ffb300;
+    color: white;
+    font-size:18px;
+    transition: all 600ms;
+}
+.recuperar{
+    text-align: right;
+    font-size: 15px;
+}
+
+/*Formulario de crear una cuenta */
+
+.contenedor form input,.contenedor_login form select{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 18px;
+    outline: none;
+}
+.contenedor form select{
+    color: rgb(100, 98, 98);
+}

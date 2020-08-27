@@ -1,0 +1,135 @@
+:root 
+{
+    --primary-color: #FFB400;
+    --primary-color-oscuro: #be8500;
+    --secondary-color: #4FAA50;
+    --secondary-color-oscuro: #1d5f1e;
+    --tertiary-color: #e7dcdc;
+    --gray-color: #7E7D7D;
+    --fondo-color: #E0E0E0;
+    --color-blanco: #ffff;
+    --color-blanco-oscuro:#f2f2f2;
+    --fondo-blanco: #ffff;
+    --fondo-cards: #222329;
+    --negro-opaco: rgba(0,0,0,.3);
+    --texto-primario:'Racing Sans One', cursive;
+    --texto-secundario:'Noto Sans JP', sans-serif;
+}
+.header .menu li a{color: var(--fondo-cards);}
+header
+{
+    background: url('../imagenes/fondo_3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 660px;
+}
+header .presentacion{text-align: center;}
+header .presentacion h2
+{
+    font-size: 70px;
+    color: var(--primary-color);
+    margin: 0;
+}
+header .presentacion h3
+{
+    margin: 0;
+    font-size: 35px;
+    font-family: var(--texto-secundario);
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 300px;
+}
+header .presentacion .boton a
+{
+    border: none;
+    outline: none;
+    background:var(--primary-color);
+    cursor: pointer;
+    color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+header .presentacion .boton a:hover
+{
+    background: var(--primary-color-oscuro);
+}
+/*-------------------MAIN HOME-------------------*/
+main .cualidades
+{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+main .cualidades .cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .cualidades .card__cualidad
+{
+    width: 30%;
+    clear: both;
+    background: var(--color-blanco-oscuro);
+    box-shadow: 2px 2px 6px var(--negro-opaco);
+}
+main .cualidades .card__cualidad .thumb{width: 100%; }
+main .cualidades .card__cualidad img
+{
+    vertical-align: top;
+    width: 100%;
+    height: 200px;
+}
+.titulo_cualidad
+{
+    font-size: 30px;
+    text-align: center;
+}
+main .cualidades .card__cualidad .descripcion
+{
+    padding: 10px;
+}
+main .cualidades .card__cualidad .descripcion .texto
+{
+    float: left;
+    width: 70%;
+    margin-top: -15px;
+    color: var(--fondo-cards);
+}
+main .cualidades .card__cualidad .descripcion .texto,
+main .cualidades .card__cualidad .descripcion i{margin-right: 5px;}
+main .cualidades .card__cualidad .descripcion i
+{
+    float: right;
+    width: 20%;
+    font-size: 40px;
+    color: var(--primary-color)
+}
+
+/*-------------------MAIN NUESTRO COMPROMISO-------------------*/
+
+main .compromiso_seguridad
+{
+    background: var(--color-blanco-oscuro);
+    padding: 40px;
+}
+main .compromiso_seguridad .contenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .compromiso_seguridad .texto_compromiso{width: 40%;}
+main .compromiso_seguridad .texto_compromiso .descripcion{color: var(--fondo-cards); text-align: center;}
+main .compromiso_seguridad .foto_seguridad
+{
+    width: 50%;
+}
+main .compromiso_seguridad .foto_seguridad img
+{
+    vertical-align: top;
+    width: 100%;
+}

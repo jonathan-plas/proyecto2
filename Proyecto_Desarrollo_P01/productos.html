@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/rastreo.css">
+    <link rel="shortcut icon" href="Imagenes/anadir.svg" type="image/x-icon">
+    <style>
+        .main .seguimiento .titulos_subsection,
+        .seguimiento_icono{text-align: center;}
+        .iconos_envio
+        {
+            font-size: 100px;
+            color: rgba(0, 0, 0, .5);
+        }
+        .subecuador
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flag_ecuador{ text-align: center; width: 5%;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                 <img src="imagenes/logo1.png" alt="Envios S.A">
+            </div>  
+            <div class="barra_buscar">
+                <form>
+                    <div class="buscador">
+                        <input type="image" src="imagenes/problema.svg" alt="#Busquemos juntos">
+                        <input type="text" name="buscar" placeholder="Buscar" id="buscar" required>
+                    </div>
+                </form>
+            </div>
+            <nav class="menu">
+                 <ul>
+                     <li><a href="index.html" class="home" >Home</a></li>
+                     <li><a href="#">Nosotros</a>
+                        <ul class="submenu">
+                            <li><a href="Nosotros.html">Mision y Vision</a></li>
+                            <li><a href="Nuestro-equipo.html">Nuestro Equipo</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="servicios.html">Nuestros Servicios</a></li>
+                            <li><a href="productos.html">Envios y Rastreos</a></li>
+                            <li><a href="informe.html">Informes</a></li>
+                            <li><a href="Pedidos.html">Pedidos</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="#">Servicio al Cliente</a>
+                        <ul class="submenu">
+                            <li><a href="Contactenos.html">Contactenos</a></li>
+                            <li><a href="AyudasEnvios.html">Ayudas de Envio</a></li>
+                            <li><a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="#">Cuenta</a>
+                        <ul class="submenu">
+                            <li><a href="Iniciar-Sesion.html">Iniciar Sesion </a></li>
+                            <li><a href="Registro.html">Registrarse</a></li>
+                       </ul>
+                    </li>
+                 </ul>
+            </nav>   
+        </div>
+    </header>
+    <main class="main">
+        <div class="colaboracion">
+            <div class="contenedor">
+                <h3 class="titulos_section">ENVIOS S.A - SERVICIOS</h3>
+                <h3 class="titulos_subsection">Los mejores servicios: <span class="typed"></span></h3>
+            </div>
+        </div>
+        <section class="acercade">
+            <div class="contenedor">
+                <h2 class="titulos_section">Envios Nacionales</h2>
+                <p>Recogemos, transportamos y entregamos tus encomiendas o paquetes de una sola pieza. Cada paquete cuenta con guía independiente para que hagas el <span>seguimiento de su entrega</span>. Nuestra solución de mercancías va orientada a la integración de productos terminados entre proveedores, productores, comercializadores y consumidores finales a través de los servicios de recolección, cross docking, almacenamiento,<span>administración de inventarios y pedidos; empaque y embalaje</span>; transporte y distribución certificada.</p>
+            </div>
+        </section>
+        <div class="ofertas">
+            <div class="contenedor">
+                <div class="servicio_courier">
+                    <div class="contenido_servicio">
+                        <h2 class="titulos_section">Servicio Courier</h2>
+                        <p>Envios S.A le presta el servicio de Courier, con el objetivo de facilitarle sus envíos el cual consiste en el envío de documentos a un determinado costo, que puede ser distribuido a nivel local e internacional según lo requiera el cliente.</p>
+                    </div>
+                    <div class="foto_servicio">
+                        <img src="imagenes/courier.jpg" alt="#Servicio_Courier">
+                    </div>
+                </div >
+                <div class="servicio_courier">
+                    <div class="foto_servicio">
+                        <img src="imagenes/empaquetado.jpg" alt="#Servicio_Empaquetado">
+                    </div>
+                    <div class="contenido_servicio">
+                        <h2 class="titulos_section">Servicio Paqueteria</h2>
+                        <p>El servicio de Courier se caracteriza por tener la velocidad, seguridad, especialización y personalización de los servicios valorados en el proceso y ejecución del reparto.  El servicio de Courier opera bajo el estándar premium en servicios de correo postal o paquetería.</p>
+                    </div>
+                </div >
+            </div>
+        </div>
+        <div class="seguimiento">
+            <h3 class="titulos_section">Seguimiento de paquetes</h3>
+            <div class="subecuador">
+                <h3 class="titulos_subsection">Sigue tus envios en Ecuador, simple y Facil </h3>
+                <img src="imagenes/ecuador_flag.svg" class="flag_ecuador" alt="#Envios en Ecuador">
+            </div>
+            
+            <div class="seguimiento_icono">
+                <i class="iconos_envio fas fa-people-carry"></i>
+            </div>
+
+            <form action="envios.php" method="POST" class="frm_rastreo">
+                <label for="rastreo" class="frm_rastreo_label">Numero de orden: </label>
+                <input type="text" name="rastreo" id="rastreo"  placeholder="Digite el numero de serie">
+                <div class="boton">
+                    <input type="submit" value="Buscar">
+                </div>                
+            </form>
+        </div>
+    </main>
+    <section class="menajes">
+        <div class="contenedor">
+            <div class="servicio_menaje">
+                <div class="contenido">
+                    <h2 class="titulos_section">Servicio Menaje</h2>
+                    <p>Con nuestro compromiso y agilidad en los envíos de Menajes, usted podrá fácilmente transportar sus bienes hacia el país que usted desee.</p>
+                    <ul class="beneficios">
+                        <li><i class="fas fa-check-circle"></i>Calidad en la toma de datos, formas de pago</li>
+                        <li><i class="fas fa-check-circle"></i>información 100% validada.</li>
+                        <li><i class="fas fa-check-circle"></i>Respaldo del 100% de interacciones.</li>
+                        <li><i class="fas fa-check-circle"></i>Estudio y segmentación de base.</li>
+                    </ul>
+                </div>
+                <div class="foto_menaje">
+                    <img src="imagenes/menajes.jpg" alt="#servicio_menaje">
+                </div>
+            </div>
+        </div>
+        
+        <div class="guias">
+            <h3 class="titulos_section">Arribo del menaje de casa y/o equipo de trabajo</h3>
+            <p class="titulos_subsection">Para gozar del no pago de impuestos en la importación del menaje de casa, se deberán cumplir con los siguientes requisitos: </p>
+            <div class="literal">
+                <div class="contenedor">
+                <p><i class="fas fa-check-circle"></i> Haber permanecido más de dos años en el exterior.</p>
+                <p><i class="fas fa-check-circle"></i> La permanencia en el exterior se podrá comprobar a través del pasaporte y de los registros de movimiento migratorio, en los que se reconozcan las entradas y salidas del viajero hacia y desde Ecuador. Cuando la salida no haya sido registrada por parte de la Policía Nacional, podrá acreditarse mediante certificados consulares o registros acreditados por la Secretaria Nacional del Migrante.</p>
+                <p><i class="fas fa-check-circle"></i> Sus visitas al territorio ecuatoriano podrán ser hasta UN máximo de ciento ochenta días (180), consecutivos o no, dentro de dos años antes de su retorno, contados desde que este se produzca.</p>
+                <p><i class="fas fa-check-circle"></i>El menaje de casa y/o equipo de trabajo podrá arribar al país dentro de los veinticuatro (24) meses después Del regreso al territorio nacional del migrante retornado, con su ánimo de residir. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer> 
+        <h2 class="titulos_section">Envios S.A</h2>
+        <div class="footer_primary">
+           
+                <div class="foto_robot">
+                    <img src="imagenes/cartoncitos.png" alt="#Trabaja En Equipo">
+                </div>
+                <div class="descripcion_empresa">
+                    <p class="nuestra_empresa">
+                        Envios S.A es una empresa 
+                        ecuatoriana especializada en logística. 
+                        Somos participantes de servicios 
+                        Express en Ecuador y contamos 
+                        con un portafolio extenso de 
+                        servicios de courier y soluciones
+                        logísticas para todo tipo de carga.
+                        Confíe en los expertos.
+                    </p>
+                </div>
+                <div class="nuestros_menus">
+                    <div class="menu_footer">
+                        <h3 class="titulo_nav_footer">Nosotros</h3>
+                        <a href="Nosotros.html">Mision y Vision</a>
+                        <a href="Nuestro-equipo.html">Nuestro Equipo</a>
+                    </div>
+                    <div class="menu_footer">
+                        <h3 class="titulo_nav_footer">Servicios</h3>
+                        <a href="servicios.html">Nuestros Servicios</a>
+                        <a href="productos.html">Envios y Rastreos</a>
+                        <a href="informe.html">Informe</a>
+                        <a href="Pedidos.html">Pedidos</a> 
+                    </div>
+                    <div class="menu_footer">
+                        <h3 class="titulo_nav_footer">Servicios Cliente</h3>
+                        <a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                        <a href="Contactenos.html">Contactenos</a>
+                        <a href="AyudasEnvios.html">Ayudas de Envios</a> 
+                    </div>
+                </div>
+            </div>
+        <div class="redes_sociales">
+            <div class="contenedor">
+                <a href="#" class="facebook"><i class="icono fab fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="icono fab fa-twitter-square"></i></a>
+                <a href="#" class="instagram"><i class="icono fab fa-instagram"></i></a>
+                <a href="#" class="github"><i class="icono fab fa-github"></i></a>
+                <a href="#" class="youtube"><i class="icono fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="sub_footer">
+            <p>Envios S.A &copy;2020 | Todos los derechos Reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/escritura.js"></script>
+    <script src="https://kit.fontawesome.com/2ce1db18f6.js" crossorigin="anonymous"></script>
+</body>
+</html>
